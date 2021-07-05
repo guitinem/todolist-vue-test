@@ -48,7 +48,7 @@ class ItemController extends Controller
         $newItem->name = $request->get('name');
         $newItem->save();
 
-        return response($newItem, 202);
+        return response($newItem, 201);
     }
 
     /**
